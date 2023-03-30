@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+  a = new Array(10);
+  s = '';
+
+  for (let i = 0; i < a.length; i++)
+  {
+      let y = Math.random() * 10 + 10;
+      a[i]  = Math.floor(y);
+      if (i % 5 === 0)
+      {
+          alert( 'Index: ' + i + ' Array element ' + a[i] );
+      }
+  }
+
+</script>
+</body>
+</html>
