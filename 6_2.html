@@ -1,0 +1,40 @@
+<head>
+<script>
+function pivo()
+{
+s=prompt('Vvedite chislo');
+n=parseInt(s);
+g1='<head><style>body{background-color:';
+g3='}h3{color:'
+;g5='}</style></head>';
+s1='<body><h3>';
+s3='</h3></body>';
+if(n<6)
+{
+s2=' Work day';g2='black';g4='white';
+}
+else
+{
+if(n>7)
+{
+s2=' Error';g2='blue';g4='navy';
+}
+else
+{
+s2=' Holiday';g2='pink';g4='grey';
+}
+}
+g=g1+g2+g3+g4+g5;
+st=s1+s+s2+s3;
+w=window.open("","","width=200,height=200");
+w.document.open();
+w.document.write(g);
+w.document.write(st);
+w.document.close();
+}
+</script>
+</head>
+<body>
+<input type='button' value='START' onclick='pivo()'>
+<input type='button' value='CLOSE' onclick='w.close();'>
+</body>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    s = prompt('Input the day number of week');
+    n  = parseInt(s);
+    s1 = '<h3>';
+    s3 = '</h3>';
+
+    if (n < 6){
+        s2 = ' Work day';
+    } else if (n > 7) {
+        s2 = ' Error';
+    } else {
+        s2 = ' Holiday'
+    }
+    st=s1+s+s2+s3;
+    document.write(st);
+
+
+</script>
+</body>
+</html>
